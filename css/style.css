@@ -45,7 +45,6 @@
                 font-size: 20px;
                 line-height: 1.5;
             }
-
             /* NAVIGATION
 -------------------------------------*/
             
@@ -415,6 +414,7 @@
                 .about-item img {
                     float: none;
                     max-width: 90%;
+                    margin-left: 10px;
                     margin-bottom: 15px;
                 }
                 .about-item .gif img {
@@ -436,33 +436,43 @@
             }
             
             @media screen and (max-width:650px) {
-                body{
+                body {
                     margin: 0;
-                                    
+                }
+                .navbar {
+                    height: 60px;
+                }
                 .cover {
                     float: none;
                     background-color: #b595f6;
-                    height: 35px;
-                    width: 35px;
-                    margin-top: 5px;
+                    height: 30px;
+                    width: 30px;
+                    margin: 5px;
+                    margin-bottom: 0;
                     border-radius: 50px;
                     overflow: none;
                     transition: none;
                 }
+                .logo {
+                    width: 100px;
+                    height: 50px;
+                    margin: 0;
+                    padding: 0;
+                }
                 .cover:hover {
-                    width: 35px;
+                    width: 30px;
                 }
                 .cover .overlay {
                     display: block;
-                    height: 35px;
-                    width: 35px;
+                    height: 30px;
+                    width: 30px;
                     text-align: center;
                     border-radius: 50%;
                 }
                 .cover .overlay svg {
                     fill: #112d4e;
-                    height: 23px;
-                    width: 23px;
+                    height: 20px;
+                    width: 20px;
                     padding-top: 6px;
                 }
                 .cover a {
@@ -475,15 +485,16 @@
                 .about-item {
                     display: inline-block;
                     grid-template-columns: 1fr 2fr;
-                    column-gap: 20px;
+                    column-gap: 0;
                 }
                 .about-item img {
                     float: none;
-                    max-width: 90%;
+                    max-width: 75%;
+                    margin-left: 0;
                     margin-bottom: 15px;
                 }
                 .logo {
-                    width: 180px;
+                    width: 140px;
                     height: 50px;
                 }
                 h1 {
@@ -497,23 +508,26 @@
                 }
                 .about-item .gif img {
                     float: none;
-                    max-width: 90%;
-                    margin-left: 10px;
+                    max-width: 75%;
+                    margin-left: 0;
                     margin-bottom: 15px;
                 }
                 .about-item .gif h4 {
                     float: none;
-                    max-width: 90%;
-                    margin-left: 10px;
+                    max-width: 80%;
+                    margin-left: 20px;
                     margin-bottom: 15px;
                 }
                 .about-item .quote {
                     display: inline-block;
+                    max-width: 80%;
+                    justify-content: center;
+                    align-items: center;
                     grid-template-columns: 1fr 2fr;
-                    column-gap: 20px;
+                    column-gap: 0;
                 }
                 .quote p {
-                    font-size: 30px;
+                    font-size: 27px;
                 }
                 .gif {
                     visibility: visible;
