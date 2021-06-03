@@ -437,6 +437,9 @@
             }
             
             @media screen and (max-width:650px) {
+                body{
+                    margin: 0;
+                                    
                 .cover {
                     float: none;
                     background-color: #b595f6;
